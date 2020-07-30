@@ -1,0 +1,54 @@
+.padding {
+  padding: 50px;
+}
+h1 {
+  color: grey;
+}
+
+img {
+  width: 200px;
+}
+
+.error-msg {
+  text-align: center;
+}
+.error-msg h1 {
+  font-size: 20vw;
+}
+.error-msg p {
+  font-size: 20px;
+}
+nav {
+  background-color: #000;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+footer p {
+  margin: 0;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid grey;
+}
+
+input {
+  padding: 5px;
+  border: 1px solid #000;
+}
+button {
+  padding: 5px;
+  border: none;
+  background-color: #000;
+  border: 1px solid #000;
+  color: #fff;
+}
+#fail {
+  display: none;
+}

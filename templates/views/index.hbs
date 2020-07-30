@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <title>{{pageTitle}}</title>
+</head>
+
+<body>
+    {{nav}}
+    {{!-- using header partials --}}
+    {{>header}}
+    <div class="padding">
+        <p>Use this site to get your weather forecast</p>
+        <form action="" class="mb-3">
+            <input type="text" placeholder="Enter Location" name="" autofocus>
+            <button>Search</button>
+        </form>
+
+        <h4 id="message1"></h4>
+        <p id="message2"></p>
+
+        <div class="alert alert-danger" id="fail" role="alert">
+
+        </div>
+        {{>footer}}
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
