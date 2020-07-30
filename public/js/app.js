@@ -28,7 +28,8 @@ weatherForm.addEventListener("submit", (e) => {
   message1.textContent = "";
   message2.textContent = "Loading data...";
   fetch(
-    "http://localhost:3000/weather?address=" + encodeURIComponent(location)
+    // "http://localhost:3000/weather?address=" + encodeURIComponent(location)
+    "/weather?address=" + encodeURIComponent(location)
   ).then((response) => {
     // fetch data from that url and then run the function
 

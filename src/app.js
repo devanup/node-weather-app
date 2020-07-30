@@ -10,6 +10,7 @@ console.log(path.join(__dirname, "../public")); // points to the web server fold
 
 // variable to store our express application
 const app = express();
+const port = process.env.PORT || 3000; //extracted the value heroku provides, if port not provided use the default fallback value of 3000
 
 // defining paths for express configuration
 const publicDirectoryPath = path.join(__dirname, "../public");
@@ -122,6 +123,6 @@ app.get("", (req, res) => {
 */
 
 //we need to start the server up to view the app on the browser
-app.listen(3000, () => {
-  console.log("The server is up on port 3000");
+app.listen(port, () => {
+  console.log("The server is up on port " + port);
 }); // port 3000 is a common local development port. Default ports varies, ex for an http based website it is port 80. It is gonna stay up and running until we stop it
