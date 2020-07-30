@@ -1,5 +1,9 @@
 const request = require("request");
 
+// Challenge: Add new data to forecast
+// update forecast string to include new data
+// commit changes, push to github and heroku
+
 const forecast = (longitude, latitude, callback) => {
   const url =
     "http://api.weatherstack.com/current?access_key=34b7991d1c4b4dad71c71112f1515710&query= " +
@@ -22,7 +26,7 @@ const forecast = (longitude, latitude, callback) => {
       // this is what will be returned from forecast function
       callback(
         undefined,
-        `${body.current.weather_descriptions[0]}. It is currently ${body.current.temperature} degrees, it feels like ${body.current.feelslike} degrees out`
+        `${body.current.weather_descriptions[0]}. It is currently ${body.current.temperature} degrees, it feels like ${body.current.feelslike} degrees out. The humidity is ${body.current.humidity}%.`
       );
     }
   });
